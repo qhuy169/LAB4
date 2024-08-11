@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-size: 16px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        nav>ul{
+            display: flex;
+            list-style: none;
+            position: relative;
+        }
+        .menu>li,.submenu>li{
+            padding: 10px;
+            border-left: 1px solid red;
+            text-align: center;
+            background-color: rgb(175, 173, 173);
+            padding: 10px 20px 10px 20px;
+        }
+        .menu>li:first-child{
+            border: none;
+        }
+        .menu>li:hover, .menu>li:hover>a,.submenu>li:hover>a,.submenu>li:hover{
+            background-color: green;
+            color: #fff;
+        }
+        .submenu{
+            list-style: none;
+            position: absolute;
+            visibility: hidden;
+            top: 100%;
+            left: 105px;
+        }
+        li:hover>.submenu{
+            visibility: visible ;
+        }
+        .submenu>li:last-child{
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="main">
+        <ul class="menu">
+            <li><a href="#">Trang chủ</a></li>
+            <li><a href="#">Khóa học</a>
+                <ul class="submenu">
+                    <li><a href="#">Lập trình web PHP&MySQL</a></li>
+                    <li><a href="#">Lập trình web NetCore</a></li>
+                    <li><a href="#">Lập trình web JavaSpringBot</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Dịch vụ</a></li>
+            <li><a href="#">Hỗ trợ</a></li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

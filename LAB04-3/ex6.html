@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-size: 16px;
+        }
+
+        a{
+            text-decoration: none;
+            color: #000;
+        }
+        #menu-1>ul>li{
+            padding: 0.75rem;
+            display: flex;
+        }
+        #menu-1>ul>li>a{
+            padding-left: 15px;
+            width: 200px;
+        }
+        #menu-1{
+            border-top: 4px solid #7b7d81f3; 
+            border-left: 4px solid #7b7d81f3; 
+            box-shadow: -4px -4px 10px rgba(178, 187, 186, 0.911); 
+            width: fit-content;
+            position: relative;
+        }
+        .menu-2{
+            position: absolute;
+            left: 100%;
+            top: 2%;
+            width: 410px;
+            visibility: hidden;
+            box-shadow: -4px -4px 10px rgba(178, 187, 186, 0.911);
+            padding: 10px;
+
+        }
+        .column{
+            column-count: 2;
+            column-gap: 40px;
+            list-style: inside;
+        }
+        ul.column>li{
+            margin-top: 0.6rem;
+            text-indent: -20px;
+            padding-left: 20px;
+        }
+        li+h4{
+            padding-top: 0.7rem;
+        }
+        #menu-1>ul>li:hover .menu-2{
+            visibility: visible;
+        }
+        #menu-1>ul>li:hover{
+            background-color: red;
+        }
+        #menu-1>ul>li:hover a,#menu-1>ul>li:hover i{
+            color: #fff;
+        }
+        
+    </style>
+</head>
+<body>
+    <nav id="menu-1">
+        <ul>
+            <li><i class="fa-brands fa-stack-overflow"></i><a href="#">Điện máy</a></li>
+            <li><i class="fa-brands fa-stack-overflow"></i><a href="#">Đồ gia dụng</a></li>
+            <li><i class="fa-brands fa-stack-overflow"></i><a href="#">Công cụ & Dụng cụ</a><i style="font-size: 11px;color:#fff;margin-top: 4px;" class="fa-solid fa-angle-right"></i>
+                <nav class="menu-2">
+                    <ul class="column">
+                        <h4>Máy khoan</h4>
+                        <li>Máy khoan pin</li>
+                        <li>Máy khoan động lực</li>
+                        <li>Máy khoan bê tông, Máy khoan búa</li>
+                        <li>Máy đực bê tông</li>
+                        <li>Máy khoan cầm tay gia đình</li>
+                        <li>Máy khoan mini</li>
+                        <li>Máy khoan rút lõi bê tông</li>
+                        <li>Máy khoan góc</li>
+                        <li>Máy khoan bàn</li>
+                        <li>Máy khoan từ</li>
+                        <li>Máy bơm nước chạy dầu</li>
+                        <li>Máy bơm nước chạy xăng</li>
+                        <li>Máy gieo hạt</li>
+                        <h4>Máy hàn điện tử</h4>
+                        <li>Máy hàn que</li>
+                        <li>Máy cắt Plasma</li>
+                        <li>Máy hàn Tig</li>
+                        <li>Máy hàn Mag</li>
+                        <li>Máy hàn Mig</li>
+                        <li>Máy hàn đa năng</li>
+                        <li>Biến thế hàn</li>
+                        <li>Máy hàn công nghiệp</li>
+                    </ul>
+                </nav>
+            </li>
+            <li><i class="fa-brands fa-stack-overflow"></i><a href="#">Y tế & Sức khỏe</a></li>
+            <li><i class="fa-brands fa-stack-overflow"></i><a href="#">Thể thao & Ngoài trời</a></li>
+            <li><i class="fa-brands fa-stack-overflow"></i><a href="#">Thiết bị văn phòng</a></li>
+            <li><i class="fa-brands fa-stack-overflow"></i><a href="#">Thiết bị số, Phụ kiện</a></li>
+            <li><i class="fa-brands fa-stack-overflow"></i><a href="#">Thiết bị công nghiệp</a></li>
+            <li><i class="fa-brands fa-stack-overflow"></i><a href="#">Nhà cửa & Đời sống</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

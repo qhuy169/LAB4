@@ -1,0 +1,17 @@
+.content {
+    background-color: #E6E6FA; /* Màu nền tím nhạt */
+    padding: 10px;
+    border: 1px solid #D3D3D3; /* Viền màu xám nhạt */
+}
+
+ul.blue-list{
+    color: blue;
+    list-style: inside;
+}
+ul.red-list{
+    color: red;
+    list-style: decimal outside;
+}
+ul.red-list li {
+    padding-left: 20px; 
+}
